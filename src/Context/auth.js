@@ -10,11 +10,10 @@ function AuthProvider({ children }){
     useEffect(()=> {
         async function loadStorage(){
             const storageUser = await AsyncStorage.getItem('Auth_user');
+ 
             if(storageUser){
                 setUser(JSON.parse(storageUser));
-                setLoading(false);
             }
-            setLoading(false);
         }
         loadStorage();
      }, []);
@@ -32,7 +31,7 @@ function AuthProvider({ children }){
                     CNPJ: snapshot.val().CNPJ,
                     Cep: snapshot.val().Cep,
                     Cnh: snapshot.val().Cnh,
-                    Email: value.user.Email,
+                    Email: snapshot.val().Email,
                     Endereco: snapshot.val().Endereco,
                     Idade: snapshot.val().Idade,
                     Nome: snapshot.val().Nome,

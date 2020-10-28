@@ -14,6 +14,7 @@ export default function login() {
   const[Modalv, setModalv] = useState('false');
   const[Modaload, setModaload] = useState(false);
   const[loading,setLoading] = useState(false);
+
   const{ logaCol } = useContext(Authcontext);
 
   const navigation = useNavigation();
@@ -28,6 +29,12 @@ export default function login() {
     logaCol(Login, Senha);
     setModalv(false);
   }
+  //vai ser deletado
+  function irHome(){
+    navigation.navigate('Home');
+  }
+
+
   
 
 

@@ -3,16 +3,13 @@ import { View, Text, Button, StyleSheet, TextInput, KeyboardAvoidingView, Scroll
 Modal, Image } from 'react-native';
 import { TextInputMask } from 'react-native-masked-text';
 import firebase from '../../Services/firebaseConnection';
-import AsyncStorage from '@react-native-community/async-storage';
-import {Authcontext} from '../../Context/auth';
-
 console.ignoredYellowBox = ['Setting a timer'];
 
 export default function Cadastro() {
   const[Email, setEmail] = useState('');
   const[Senha, setSenha] = useState('');
   const[Nome, setNome] = useState('');
-  const[Idade, setIdade] = useState('');
+  const[Idade, setIdade] = useState('');  
   const[Modalv, setModalv] = useState('false');
   const[CNPJ, setCNPJ] = useState('');
   const[Endereco] = useState('');
@@ -71,7 +68,7 @@ export default function Cadastro() {
       <TextInputMask style={styles.Entrada1}
       type={'datetime'} options={{format: 'DD/MM/YYYY'}}
       value={Idade}placeholder="Digite sua data de nascimento"
-      onChangeText={text => {setIdade(text); }}/>
+      onChangeText={text => {setIdade(Idade); }}/>
 
       <TextInput style={styles.Entrada1}
       placeholder="Digite seu Email" underlineColorAndroid="transparent" 
