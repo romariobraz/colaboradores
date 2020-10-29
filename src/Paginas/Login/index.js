@@ -73,7 +73,7 @@ export default function login() {
               <View style={{flexDirection:'row', height:120, alignItems:'center'}}>
                 <TextInput
                 style={styles.EntradaTexto}
-                placeholder='Inicie com seu telefone ou email'
+                placeholder='Insira seu telefone ou email'
                 autoCorrect={false}
                 onChangeText={Login => setLogin(Login)}/>
                   <TouchableOpacity style={styles.btnLogin} onPress={() => {setModalv(true)}}>
@@ -126,7 +126,7 @@ export default function login() {
               {/*Entrada do cadastro*/}
                   <TouchableOpacity style={styles.Btn2} onPress={irCadastro}>
                     <Text style={styles.Fonte1}>
-                      Crie sua conta UD Colaborador!
+                      Crie sua conta como nosso colaborador!
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     marginTop: '3%',
     justifyContent: 'center',
     textAlign:'center',
-   color:'#35AAFF',
+   color:'#32816a',
   },
   btnlg2:{
     marginStart: -12,
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
     height:50,
   },
   Btn2:{
-    backgroundColor:'#35AAFF',
+    backgroundColor:'#32816a',
     width: '50%',
     height: '12%',
     fontSize: 30,
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
   modal1:{
     width: '87%',
     height: 130,
-    borderColor: '#3AB4EE',
+    borderColor: '#32816a',
     borderWidth: 3,
     borderRadius: 3,
     backgroundColor: '#f2f2f2',
@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor:'#548AF0',
+    backgroundColor:'#32816a',
   },
   close:{
     borderRadius:50,

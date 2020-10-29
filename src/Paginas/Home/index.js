@@ -24,7 +24,7 @@ export default function Home() {
       <View style={styles.cbc}>
         <Text style={styles.Fonte}>Seja bem vindo!</Text>
         <Text style={styles.Fonte}>{userC.Nome}</Text>
-        <Text style={styles.Fonte2}>Aqui você e a Updown Crescem Juntos.</Text>
+        <Text style={styles.Fonte2}>Aqui nós crescemos juntos.</Text>
 
       <TouchableOpacity style={styles.Btn1} onPress={irDados}>
       <Text style={styles.Fonte1}> 1...Dados Cadastrais </Text>
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     alignSelf:"center"
   },
   bckgrd:{
-    backgroundColor: '#35AAFF',
+    backgroundColor: '#32816a',
     width: '100%',
     height: '100%'
   }

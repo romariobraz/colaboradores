@@ -68,7 +68,7 @@ export default function Cadastro() {
       <TextInputMask style={styles.Entrada1}
       type={'datetime'} options={{format: 'DD/MM/YYYY'}}
       value={Idade}placeholder="Digite sua data de nascimento"
-      onChangeText={text => {setIdade(Idade); }}/>
+      onChangeText={Idade => {setIdade(Idade); }}/>
 
       <TextInput style={styles.Entrada1}
       placeholder="Digite seu Email" underlineColorAndroid="transparent" 
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   Texto1:{
     fontSize: 18,
     marginTop: 15,
-    color: '#3AB4EE',
+    color: '#32816a',
     alignSelf:'center',
   },
   FonRec:{
@@ -133,10 +133,10 @@ const styles = StyleSheet.create({
     fontSize: 23,
     justifyContent: 'center',
     textAlign:'center',
-   color:'#32c0ed',
+   color:'#32816a',
   },
   Btn1:{
-    backgroundColor:'#35AAFF',
+    backgroundColor:'#32816a',
     width: '45%',
     height: 53,
     fontSize: 30,
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     width: '87%',
     height: '80%',
     backgroundColor:'white',
-    borderColor: '#3AB4EE',
+    borderColor: '#32816a',
     backgroundColor:'#f2f2f2',
     borderWidth: 5,
     borderRadius: 3,
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
     marginLeft:'90%',
   },
   btnprox: {
-    backgroundColor:'#3AB4EE',
+    backgroundColor:'#32816a',
     width: 260,
     height: 60,
     alignContent:'center',

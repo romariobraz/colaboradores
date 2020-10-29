@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 Fonte1:{
     fontSize:31,
     marginTop: 5,
-    color: '#35AAFF',
+    color: '#32816a',
     alignSelf:'center',
   },
 })
